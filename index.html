@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use-->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDzqSr0GBO_tYecobsKH9ovVbCjfaTdxkg",
+            authDomain: "info-manager-b5f9b.firebaseapp.com",
+            databaseURL: "https://info-manager-b5f9b-default-rtdb.firebaseio.com",
+            projectId: "info-manager-b5f9b",
+            storageBucket: "info-manager-b5f9b.appspot.com",
+            messagingSenderId: "844087424895",
+            appId: "1:844087424895:web:11804238561a35ab924c4a"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <div class="forms-out">
+        <div class="forms-in">
+            <div id="registration-page" class="hide">
+                <button id="show-login">Sign In</button>
+                <h3>Sign Up</h3>
+                Email <br />
+                <input type="email" id="registration-email" /><br />
+                Confirm Email <br />
+                <input type="email" id="registration-reemail" autocomplete="disable" /><br />
+                Password <br />
+                <input type="password" id="registration-password" /><br />
+                <center><button id="register">Sign Up</button></center>
+            </div>
+
+            <div id="login-page">
+                <button id="show-register">Sign Up</button>
+                <h3>Sign In</h3>
+                Email <br />
+                <input type="email" id="login-email" /><br />
+                Password <br />
+                <input type="password" id="login-password" /><br />
+                <p id="forgot-password">Forgot Password</p>
+                <center><button id="login">Sign In</button></center>
+            </div>
+
+            <div id="homepage" class="hide">
+                <button id="signout">Sign Out</button>
+                <h3>Logged In</h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
